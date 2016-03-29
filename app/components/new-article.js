@@ -3,8 +3,8 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   createFormShowing: false,
   actions: {
-    toggleForm() {
-      this.toggleProperty('createFormShowing');
+    toggleDetail() {
+      this.toggleProperty('showDetail');
     },
     createFormSubmit() {
       var formInputs = {
@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         image: this.get('image'),
         body: this.get('body')
       };
-      this.toggleProperty('createFormShowing');
+      this.toggleProperty('showDetail');
       this.sendAction('createArticle', formInputs);
     }
   }

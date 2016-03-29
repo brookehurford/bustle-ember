@@ -5,4 +5,8 @@ export default function(){
     this.use('toLeft'),
     this.reverse('toRight')
   );
+  this.transition(
+  this.hasClass('fade-demo'),
+  this.use('fade', 1000)
+);
 }
