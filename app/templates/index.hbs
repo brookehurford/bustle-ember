@@ -22,6 +22,8 @@
 
 {{/carousel-container}}
 
-{{#each model as |article|}}
+<div class="articleList">
+  {{#each model as |article|}}
   {{ article-tile article=article}}
-{{/each}}
+  {{/each}}
+</div>

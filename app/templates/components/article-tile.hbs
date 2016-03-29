@@ -1,5 +1,13 @@
-{{#link-to 'article' article.id}}{{ article.title }}{{/link-to}} <br>
-{{ article.author }} <br>
-<img src="{{ article.image }}" alt="Article Image"><br>
-{{ article.category }}
-<hr>
+
+  <div class="articleTile">
+    <div class="articleImage" style="background-image: url('{{article.image}}');">
+      <!-- <img src="{{ article.image }}" alt="Article Image"> -->
+    </div>
+    <span class="articleTitle">{{#link-to 'article' article.id}}{{ article.title }}{{/link-to}}</span> <br>
+    <hr>
+    <div class="articleInfo">
+      <span>{{ article.author }}</span>
+      <span>{{ article.category }}</span>
+    </div>
+    <span class="category">{{ article.category }}</span>
+  </div>

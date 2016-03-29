@@ -1,3 +1,7 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 img {
   max-width: 300px;
 }
@@ -73,4 +77,55 @@ nav p:last-child {
   background-color: white;
   text-transform: uppercase;
   border-bottom: 1px solid lightgrey;
+}
+
+/* Article Tile */
+
+.articleList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.articleTile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 95%;
+  min-width: 350px;
+}
+
+.articleTile hr {
+  border: 1px solid lightgrey;
+  width: 100%;
+}
+
+.articleImage {
+  height: 60%;
+  min-height: 250px;
+  width: 100%;
+  background-size: cover;
+}
+
+.articleTitle {
+  font-size: 16px;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+
+.articleInfo {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+  font-size: 14px;
+}
+
+.category {
+  position: relative;
+  bottom: 365px;
+  left: 3%;
+  color: white;
+}
+
+footer {
+  margin-bottom: 75px;
 }
