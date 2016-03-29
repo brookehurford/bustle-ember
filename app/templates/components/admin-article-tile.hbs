@@ -2,5 +2,7 @@
 {{ article.author }} <br>
 <img src="{{ article.image }}" alt="Article Image"><br>
 {{ article.category }}
-{{ article.body }}
+{{ article.body }} <br>
+<button>Update Article</button>
+<button {{action 'delete' article}}>Delete Article</button>
 <hr>
