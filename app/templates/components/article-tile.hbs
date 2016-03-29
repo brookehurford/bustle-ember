@@ -1,5 +1,7 @@
-<div class="articleImage" style="background-image: url('{{article.image}}');">
-</div>
+{{#link-to 'article' article.id}}
+  <div class="articleImage" style="background-image: url('{{article.image}}');">
+  </div>
+{{/link-to}}
 <span class="articleTitle">{{#link-to 'article' article.id}}{{ article.title }}{{/link-to}}</span> <br>
 <hr>
 <div class="articleInfo">

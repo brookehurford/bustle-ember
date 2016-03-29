@@ -28,6 +28,8 @@
 {{/if}} -->
 
 {{#liquid-if showDetail class='fade-demo'}}
+<div class="createArticleSection">
+  <h2>Add New Article</h2>
   <form class="createArticleForm">
     <div class="form-group">
       <label for="title">Article Title</label>
@@ -51,7 +53,10 @@
     </div>
     <button {{action 'createFormSubmit'}}>Create Article</button>
   </form>
-  <button {{action 'toggleDetail'}}>Cancel</button>
+  <button class="secondaryBtn"{{action 'toggleDetail'}}>Cancel</button>
+</div>
 {{else}}
-  <button {{action 'toggleDetail'}}>Create Article</button>
+  <div class="createArticleSection">
+    <button {{action 'toggleDetail'}}>Add New Article</button>
+  </div>
 {{/liquid-if}}

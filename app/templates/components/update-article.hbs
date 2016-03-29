@@ -20,7 +20,7 @@
       <label for="body">Body</label>
       {{input value=body id="body" placeholder=article.body}}
     </div>
-    <button {{action 'updateFormSubmit'}}>Update Article</button>
+    <button class="primaryBtn" {{action 'updateFormSubmit'}}>Update Article</button>
   </form>
   <button {{action 'updateForm'}}>Cancel</button>
   {{else}}
