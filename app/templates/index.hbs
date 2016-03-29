@@ -1,3 +1,5 @@
 <h1>This is the index route to Bustle.</h1>
 
-{{ article-tile }}
+{{#each model as |article|}}
+  {{ article-tile article=article}}
+{{/each}}
