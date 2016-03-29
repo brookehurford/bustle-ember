@@ -17,6 +17,12 @@ export default Ember.Route.extend({
       });
       article.save();
       this.transitionTo('admin');
+    },
+    createArticle(formInputs) {
+      // validate that all fields are filled
+      var newArticle = this.store.createRecord('article', formInputs);
+      newArticle.save();
+      this.transitionTo('admin');
     }
   }
 });
