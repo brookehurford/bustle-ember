@@ -13,7 +13,7 @@ export default Ember.Route.extend({
       Object.keys(formInputs).forEach(function(key) {
         if(formInputs[key]!==undefined) {
           article.set( key , formInputs[key] );
-        };
+        }
       });
       article.save();
       this.transitionTo('admin');

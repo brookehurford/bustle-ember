@@ -10,6 +10,17 @@ button {
   margin: 15px auto;
 }
 
+.arrows{
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  position: relative;
+  bottom: 400px;
+  color: white;
+  width: 98%;
+  margin: 0 auto;
+}
+
 .jumbotron {
   background-color: white;
   text-transform: uppercase;
