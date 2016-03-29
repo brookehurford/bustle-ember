@@ -10,6 +10,11 @@ button {
   margin: 15px auto;
 }
 
+.carouselItem img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .arrows{
   display: flex;
   justify-content: space-between;
@@ -17,7 +22,7 @@ button {
   position: relative;
   bottom: 400px;
   color: white;
-  width: 98%;
+  width: 95%;
   margin: 0 auto;
 }
 
