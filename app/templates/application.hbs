@@ -1,8 +1,21 @@
-<header class = "jumbotron">
+<!-- <header class = "jumbotron">
   <div class="container">
     <h1>Bustle</h1>
   </div>
-</header>
+</header> -->
+<div class="container">
+  <div class="navBar">
+    {{#link-to 'index'}}<h1>Bustle</h1>{{/link-to}}
+    <nav>
+      <p>News</p>
+      <p>Entertainment</p>
+      <p>Fashion &#38; Beauty</p>
+      <p>Lifestyle</p>
+      {{#link-to 'admin'}}<p>Admin</p>{{/link-to}}
+    </nav>
+  </div>
+</div>
+
 
 <div class="container">
   {{outlet}}
