@@ -3,6 +3,6 @@
 <img src="{{ article.image }}" alt="Article Image"><br>
 {{ article.category }}
 {{ article.body }} <br>
-<button>Update Article</button>
-<button {{action 'delete' article}}>Delete Article</button>
+  {{update-article article=article}}
+  <button {{action 'delete' article}}>Delete Article</button>
 <hr>
